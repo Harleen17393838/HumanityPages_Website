@@ -1,0 +1,68 @@
+* {box-sizing: border-box;margin: 0;padding: 0;}
+body {font-family: sans-serif;font-size: 16px;line-height: 1.5;}
+.container {max-width: 1200px;margin: 0 auto;padding: 0 20px;}
+header{background-color: #fff;box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;top: 0;z-index: 999;}
+header h1 {font-size: 28px;font-weight: bold;margin: 0;
+    padding: 20px 0;text-align: center;}
+nav ul {display: flex;justify-content: center;list-style: none;
+    margin: 0;padding: 0;}
+nav ul li {margin: 0 10px;}
+nav ul li a {color: #333;text-decoration: none;transition: color 0.2s ease-in-out;}
+nav ul li a:hover {color: #666;}
+.quote-section {background-color: #f5f5f5;padding: 80px 0;text-align: center;}
+.quote-section blockquote {font-size: 24px;font-style: italic;margin: 0;}
+.quote-section cite {display: block;margin-top: 20px;}
+.quotes-section {padding: 80px 0;}
+.quotes-section h2 {text-align: center;margin-bottom: 40px;}
+.quotes-section ul {list-style: none;margin: 0;padding: 0;display: flex;
+    flex-wrap: wrap;justify-content: center;}
+.quotes-section li {flex: 1 1 300px;margin: 20px;background-color: #f5f5f5;
+    padding: 40px;border-radius: 4px;box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease-in-out;}
+.quotes-section li:hover {box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);}
+.quotes-section blockquote {font-size: 20px;font-style: italic;margin: 0;}
+.quotes-section cite {display: block;margin-top: 20px;font-style: normal;}
+footer {background-color: #333;color: #fff;padding: 20px 0;text-align: center;}
+footer p {margin: 0;}
+
+@media screen and (max-width: 768px) /*to make responsive*/
+{header h1 {font-size: 24px;padding: 10px 0;}
+  nav ul {flex-wrap: wrap;justify-content: center;}
+  nav ul li {margin: 10px;}
+  .quote-section blockquote {font-size: 20px;}.quotes-section li {
+   
+@media only screen and (max-width: 768px) /*for phones and other mobile devices*/
+{header {padding: 16px;height: auto;}
+nav {display: none;}
+nav.active {display: block;}
+nav ul {display: flex;flex-direction: column;margin-top: 16px;}
+nav ul li {margin-bottom: 8px;}
+nav ul li a {display: block;padding: 8px;border-radius: 4px;
+    background-color: #3F3F3F;color: #FFFFFF;text-align: center;}
+nav ul li a:hover {background-color: #1F1F1F;}
+main {padding: 16px;}
+.quote-section blockquote {font-size: 1.5rem;}
+.quote-section cite {font-size: 1rem;}
+.quotes-section ul li {margin-bottom: 32px;}
+.quotes-section blockquote {font-size: 1rem;}
+.quotes-section cite {font-size: 0.8rem;}}
+
+@media only screen and (min-width: 769px) /*for desktop devices*/
+{header {display: flex;justify-content: space-between;
+    align-items: center;height: 80px;padding: 0 32px;}
+nav {display: flex;}
+nav ul {display: flex;list-style: none;margin: 0;padding: 0;}
+nav ul li {margin-left: 32px;}
+nav ul li:first-child {margin-left: 0;}
+nav ul li a {text-decoration: none;color: #3F3F3F;font-size: 1.2rem;font-weight: 600;
+    padding: 8px 16px;border-radius: 4px;transition: background-color 0.3s ease;}
+nav ul li a:hover {background-color: #F2F2F2;}
+main {padding: 64px 32px;}
+.quote-section blockquote {font-size: 2rem;line-height: 1.4;
+    max-width: 800px;margin: 0 auto;}
+.quote-section cite {font-size: 1.2rem;margin-top: 16px;display: block;text-align: right;}
+.quotes-section ul {display: flex;flex-wrap: wrap;margin: 0 -16px;}
+.quotes-section ul li {flex: 0 0 calc(33.333% - 32px);margin: 0 16px 32px;}
+.quotes-section blockquote {font-size: 1.2rem;line-height: 1.4;margin-bottom: 16px;}
+.quotes-section cite {font-size: 1rem;display: block;text-align: right;}}
